@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.fa-plus {
+  padding: 10px;
+}
+
+.btn-info {
+  margin-right: 7px;
+}
+
+#product {
+  color: white;
+}
+
+.form-group {
+  margin-right: 700px;
+
+}

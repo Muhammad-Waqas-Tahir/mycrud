@@ -1,0 +1,31 @@
+extends ../layout 
+
+block content
+    .row 
+        .col-sm-8
+            h1=title 
+        .col-sm-4
+            a(href="/product/add",class="btn btn-dark float-right" ) CREATE PRODUCT
+
+    
+    table.table
+        thead
+            tr  
+                th NAME
+                th PRICE
+                th CATEGORY
+                th BRAND
+                th ACTION
+        tbody
+            each productModel in products
+                tr
+                    td=productModel.Name
+                    td=productModel.Price
+                    td=productModel.Category
+                    td=productModel.Brand
+                    td
+                         a(href="/product/edit/"+productModel._id,class="btn btn-info" class="fas fa-edit" )
+                         a(href="/product/delete/"+productModel._id,class="btn btn-danger" class="fas fa-trash" )
+                       
+                    
+
